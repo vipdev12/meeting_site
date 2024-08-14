@@ -1,0 +1,70 @@
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Amici - сайт знакомств и поиска своей второй половинки</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="app">
+    <div class='true'>
+      <div class='first-child-app'>
+
+        <div class='navWrap'>
+          <div class='navlogo'>Amici</div>
+          <div class='navigation'>
+            <div class='nav'>
+              <div class='singin'>
+                <div> <a href="{% url 'login' %}">Вход</a></div>
+              </div>
+              <div style="cursor:pointer"> <a href="{% url 'register' %}">Регистрация</a></div>
+
+              <!-- <div class="dropdown">
+                <div class='dropDownMenu'
+                  style="display:flex; flex-wrap:nowrap ; align-items : center; justify-content : space-between">
+                  <div id='menu'>Меню</div>
+                </div> -->
+
+                <div class="dropdown-content">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class='height'>
+      <div class='container'>
+        <div class='findWrapImage'>
+          <p class='findTextTitle'>
+            <bold>
+              Этот сайт создан для друзей и тех, кто ищет спутника жизни. <br />
+              Возможно он поможет обрести уверенность в себе,
+              или решится сделать тот самый первый шаг навстречу своей судьбе.
+            </bold>
+          </p>
+          <p class='findTextP'>
+            И от нас самих ничего на этой земле не останется… <br />
+            Кроме памяти в каком-то сердце,<br />
+            Сильно любившем нас…<br />
+            Э.М. Ремарк
+          </p>
+          <img class='findImage' src="{% static 'images/index_page_image.png' %}" alt="img" />
+          <!-- <img class='findImage' src="../../../back_static/images/index_page_image.png" alt="img" /> -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- partial -->
+
+</body>
